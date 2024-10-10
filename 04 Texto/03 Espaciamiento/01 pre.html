@@ -1,5 +1,6 @@
 <style>
-    /* Espacios en blanco: conserva los espacios y saltos de línea */
+    /* Espacios en blanco:
+     conserva los espacios y saltos de línea */
     .preserve {
       white-space: pre;
     }
@@ -10,4 +11,34 @@
   saltos
   de
   línea</div>
+  <style>
+    /* Espacios en blanco: elimina
+     los espacios extra y hace saltos de 
+     línea automáticos */
+    .normal {
+ white-space: normal;
+    }
+</style>
+
+<div class="normal">Texto con espacios y saltos de
+    línea que se ajustan automáticamente.</div>
+    <style>
+      /* Espacios en blanco: no permite 
+      saltos de línea y trunca el texto */
+      .nowrap {
+          white-space: nowrap;
+      }
+  </style>
   
+  <div class="nowrap">Este texto no se rompe y tampoco hace saltos de línea.</div>
+  <style>
+    /* Envoltura de palabras: permite romper palabras largas */
+    .word-wrap {
+        word-wrap: break-word;
+    }
+    p{
+        white-space: nowrap;
+    }
+</style>
+
+<div class="word-wrap">Palabraslargaquetendríaqueserdivididaenlíneas.</div>

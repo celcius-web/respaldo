@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{background: #333;
+            margin: 0;
+        }
+    div{
+        background: rgb(59, 145, 188);
+        padding: 10px;
+        border: 10px solid red;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        /*content contempla solo en contenido*/
+        box-sizing: content-box;
+
+    }
+    .doble{background: rgb(59, 7, 163);
+        padding: 10px;
+        border: 10px solid red;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        /*border contempla el comtenido, pading y borde*/
+        box-sizing: border-box;
+
+    }
+    span{
+        background: red;
+        padding: 10px;
+        border: 10px dashed blue;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        /*con esto haccemos que el span se 
+        comporte como bloque*/
+        display: block;
+
+    }
+</style>
+<title>Document</title>
+</head>
+<body>
+    <div>caja</div>
+    <div class="doble">caja doble</div>
+    <br>
+    <br>
+    <br>
+
+    <span>MODELO DE CAJA</span>
+</body>
+</html>

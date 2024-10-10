@@ -3,32 +3,55 @@
 
 <head>
   <style>
-    html {
-      font-size: 10px;
-    }
 
-    body {
-      margin: 0;
-      font-size: 100%;
-      width: 50%;
-    }
+    /*las unidadse son los pixeles*/
+.container{
+  width: 50px;
+ height: 50px;
+ background: rgb(147, 16, 16);
+}
 
+body{
+  background: #09f;
+  width: 50%;
+}
+
+    html {font-size: 10px;
+      
+    }
+/*coor de fondo del texto*/
     h1 {
-      background: greenyellow;
+      background: rgb(171, 254, 4);
       /* px Absoluta */
       width: 300px;
-      /* % realtive al tamaño del padre */
+      /* % realtive al tamaño del padre .
+      toma 300 luces de retina px y ponlas en lo ancho
+      ... las pone en  lo ancho, valor r al tamno del padre a body*/
       width: 50%;
-      /* em Relativa a font-size del padre */
-      font-size: 3em;
+  
+       /* em Relativa a font-size del padre */
+      font-size: 3epx;
       /* rem Relativa a font-size de raiz */
-      font-size: 3rem;
+      font-size: 33px;
+    }
+    .preserve{
+      white-space: pre;
     }
   </style>
 </head>
 
 <body>
+  
   <h1>Unidades</h1>
+  <div class="container">
+  </div>
+  <p class="preserve">texto
+    con
+    saltos
+    de 
+    linea
+  </p>
 </body>
 
 </html>
+

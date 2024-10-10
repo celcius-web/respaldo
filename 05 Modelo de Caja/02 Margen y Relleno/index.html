@@ -3,25 +3,79 @@
 
 <head>
   <style>
-    body {
+    /*aveses el navegador pone espacios
+    osea su marguen aonque podmos resetearlo 
+    con la libreria pero rar ves se hace manualmente
+    */
+    ody {
       margin: 0;
+      background: #333
     }
 
     div,
     span {
       background: red;
+
       /* ADAI */
-      /* padding: 100px 20px 30px 80px; */
+      / padding: 100px 20px 30px 80px; */
       /* A DI A */
       /* padding: 100px 40px 30px; */
       /* AA DI */
       /* padding: 100px 40px; */
       /* AADR */
       padding: 10px;
-
       margin: 1px 20px 40px 5px;
-      display: inline-block;
+      /*si tenemmos problemas podemos poner 
+      displey inline bloke que
+      este nos da una propiedad de bloke al span
+      para que opere como bloque y no como linea
+      es decir actua como termino medioni lago
+      ni corto,apto para trabajar en muchos cuadros*/
+      display: block;
+      /*block, muestra la caja en forma
+       de linea en todo el body
+      */
+      /*muestra alineados co otros bloques*/
+      display: inline-block
+      ;
     }
+    .spano{
+        background: red;
+        padding: 10px;
+        border: 10px dashed rgb(64, 64, 107);
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        display: block;
+        /*con esto haccemos que el span se 
+        comporte como bloque*/
+        display:inline-block ;}
+        div{
+        background: rgb(59, 145, 188);
+        padding: 10px;
+        border: 10px solid red;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        /*content contempla solo en contenido*/
+        box-sizing: content-box;
+        display: inline-block;
+
+    }
+    
+    .doble{background: rgb(116, 107, 136);
+        padding: 10px;
+        border: 10px solid red;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        /*border contempla el comtenido, pading y borde*/
+        box-sizing: border-box;
+display: inline-block;
+    }
+    
+
   </style>
 </head>
 
@@ -31,6 +85,10 @@
   <span>BOX MODEL</span>
   <span>BOX MODEL</span>
   <span>BOX MODEL</span>
+  <span class="spano">box MODEL</span>
+  <div>caja</div>
+  <div class="doble">caja doble</div>
+ 
 </body>
 
 </html>
